@@ -1,0 +1,9 @@
+{
+  "elmType": "div",
+  "txtContent": "@currentField",
+  "style": {
+    "max-width": "60px",
+    "font-size": "12pt",
+    "font-weight": "bold"
+  }
+}

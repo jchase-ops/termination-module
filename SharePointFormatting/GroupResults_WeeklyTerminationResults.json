@@ -1,0 +1,58 @@
+{
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "span",
+      "txtContent": "[$Removed]",
+      "style": {
+        "color": "green",
+        "padding-left": {
+          "operator": "?",
+          "operands": [
+            {
+              "operator": "<",
+              "operands": [
+                "[$Removed]",
+                10
+              ]
+            },
+            "6px",
+            "0px"
+          ]
+        }
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "-",
+      "style": {
+        "color": "black",
+        "padding-left": "10px"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "[$Excluded]",
+      "style": {
+        "color": "goldenrod",
+        "padding-left": "=if([$Excluded] < 10, '12px', '6px')"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "-",
+      "style": {
+        "color": "black",
+        "padding-left": "10px"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "[$Failed]",
+      "style": {
+        "color": "red",
+        "padding-left": "=if([$Failed] < 10, '12px', '6px')"
+      }
+    }
+  ]
+}

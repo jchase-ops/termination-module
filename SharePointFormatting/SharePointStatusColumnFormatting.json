@@ -1,0 +1,38 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+    "elmType": "div",
+    "txtContent": "@currentField",
+    "style": {
+        "background-color": {
+            "operator": "?",
+            "operands": [
+                {
+                    "operator": "==",
+                    "operands": [
+                        "[$Status]",
+                        "Success"
+                    ]
+                },
+                "lightgreen",
+                {
+                    "operator": "?",
+                    "operands": [
+                        {
+                            "operator": "==",
+                            "operands": [
+                                "[$Status]",
+                                "Failed"
+                            ]
+                        },
+                        "red",
+                        "yellow"
+                    ]
+                }
+            ]
+        },
+        "font-size": "11pt",
+        "font-style": "bold",
+        "color": "black",
+        "padding-left": "25px"
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "span",
+      "txtContent": "[$SuccessfulSteps]",
+      "style": {
+        "color": "green",
+        "padding-left": {
+          "operator": "?",
+          "operands": [
+            {
+              "operator": "<",
+              "operands": [
+                "[$SuccessfulSteps]",
+                10
+              ]
+            },
+            "6px",
+            "0px"
+          ]
+        }
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "-",
+      "style": {
+        "color": "black",
+        "padding-left": "10px"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "[$SkippedSteps]",
+      "style": {
+        "color": "goldenrod",
+        "padding-left": "=if([$SkippedSteps] < 10, '12px', '6px')"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "-",
+      "style": {
+        "color": "black",
+        "padding-left": "10px"
+      }
+    },
+    {
+      "elmType": "span",
+      "txtContent": "[$FailedSteps]",
+      "style": {
+        "color": "red",
+        "padding-left": "=if([$FailedSteps] < 10, '12px', '6px')"
+      }
+    }
+  ]
+}

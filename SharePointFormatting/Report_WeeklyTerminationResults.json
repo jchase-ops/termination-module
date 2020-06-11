@@ -1,0 +1,12 @@
+{
+  "elmType": "a",
+  "txtContent": "=substring('@currentField', 39, 48)",
+  "attributes": {
+    "target": "_blank",
+    "href": "@currentField"
+  },
+  "style": {
+    "color": "blue",
+    "text-decoration": "underline"
+  }
+}

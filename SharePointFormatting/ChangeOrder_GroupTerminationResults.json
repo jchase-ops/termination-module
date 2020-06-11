@@ -1,0 +1,37 @@
+{
+  "elmType": "div",
+  "txtContent": "@currentField",
+  "style": {
+    "background-color": {
+      "operator": "?",
+      "operands": [
+        {
+          "operator": "==",
+          "operands": [
+            "[$Result]",
+            "Removed"
+          ]
+        },
+        "lightgreen",
+        {
+          "operator": "?",
+          "operands": [
+            {
+              "operator": "==",
+              "operands": [
+                "[$Result]",
+                "Failed"
+              ]
+            },
+            "red",
+            "yellow"
+          ]
+        }
+      ]
+    },
+    "font-size": "12pt",
+    "font-style": "bold",
+    "color": "black",
+    "padding-left": "35px"
+  }
+}
